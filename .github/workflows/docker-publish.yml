@@ -67,5 +67,3 @@ jobs:
             ${{secrets.DOCKER_USERNAME}}/api-gateway:0.0.1-SNAPSHOT
             ${{secrets.DOCKER_USERNAME}}/cambio-service:latest
             ${{secrets.DOCKER_USERNAME}}/cambio-service:0.0.1-SNAPSHOT
-            ${{secrets.DOCKER_USERNAME}}/book-service:latest
-            ${{secrets.DOCKER_USERNAME}}/book-service:0.0.1-SNAPSHOT
