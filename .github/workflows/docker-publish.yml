@@ -54,16 +54,4 @@ jobs:
         working-directory: ./
         run: docker-compose build
         
-      - name: Push to Docker Hub Container Registry
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          platforms: linux/amd64,linux/arm64
-          push: true
-          tags: |
-            ${{secrets.DOCKER_USERNAME}}/naming-server:latest
-            ${{secrets.DOCKER_USERNAME}}/naming-server:0.0.1-SNAPSHOT
-            ${{secrets.DOCKER_USERNAME}}/api-gateway:latest
-            ${{secrets.DOCKER_USERNAME}}/api-gateway:0.0.1-SNAPSHOT
-            ${{secrets.DOCKER_USERNAME}}/cambio-service:latest
-            ${{secrets.DOCKER_USERNAME}}/cambio-service:0.0.1-SNAPSHOT
+
