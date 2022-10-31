@@ -50,10 +50,12 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: user/app:latest
-            ${{ secrets.DOCKER_USERNAME }}/naming-server:0.0.1-SNAPSHOT:latest
-            ${{ secrets.DOCKER_USERNAME }}/api-gateway:0.0.1-SNAPSHOT:latest
-            ${{ secrets.DOCKER_USERNAME }}/cambio-service:0.0.1-SNAPSHOT:latest
-            ${{ secrets.DOCKER_USERNAME }}/book-service:0.0.1-SNAPSHOT:latest
-            ${{ secrets.DOCKER_USERNAME }}/naming-server:0.0.1-SNAPSHOT:latest
-
+          tags:
+            ${{secrets.DOCKER_USERNAME}}/naming-server:0.0.1-SNAPSHOT
+            ${{secrets.DOCKER_USERNAME}}/naming-server:latest
+            ${{secrets.DOCKER_USERNAME}}/api-gateway:0.0.1-SNAPSHOT
+            ${{secrets.DOCKER_USERNAME}}/api-gateway:latest
+            ${{secrets.DOCKER_USERNAME}}/cambio-service:0.0.1-SNAPSHOT
+            ${{secrets.DOCKER_USERNAME}}/cambio-service:latest
+            ${{secrets.DOCKER_USERNAME}}/book-service:0.0.1-SNAPSHOT
+            ${{secrets.DOCKER_USERNAME}}/book-service:latest
