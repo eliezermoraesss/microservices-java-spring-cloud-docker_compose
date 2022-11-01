@@ -1,4 +1,6 @@
   # Microservices com Java Spring Cloud, Spring Boot e Docker 🍃
+  
+   [![Continuos Integration with Github](https://github.com/eliezermoraesss/microservices-java-spring-cloud-docker_compose/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/eliezermoraesss/microservices-java-spring-cloud-docker_compose/actions/workflows/docker-publish.yml)
  
  ## Endpoints para teste: 🧪
  
@@ -30,5 +32,3 @@ Hystrix                   -->  Resliience4J<br>
 Ribbon                   -->  Spring Cloud Load Balancer<br>
 Zuul 1                    -->  Spring Cloud Gateway<br>
 Archaius 1            -->  Spring Cloud Config<br>
- 
- [![Continuos Integration with Github](https://github.com/eliezermoraesss/microservices-java-spring-cloud-docker_compose/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/eliezermoraesss/microservices-java-spring-cloud-docker_compose/actions/workflows/docker-publish.yml)
